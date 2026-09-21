@@ -4,11 +4,11 @@ const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 // Array of models to try in order of preference. If one hits a rate limit, it falls back to the next.
 const FALLBACK_MODELS = [
-  'gemini-1.5-flash',
-  'gemini-2.0-flash',
   'gemini-2.5-flash',
-  'gemini-1.5-pro',
+  'gemini-2.0-flash',
+  'gemini-1.5-flash',
   'gemini-flash-latest',
+  'gemini-1.5-pro',
   'gemini-3.1-flash-lite',
   'gemini-3.7-flash',
   'gemini-3.6-flash',
